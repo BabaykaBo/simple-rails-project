@@ -3,11 +3,11 @@
 # Controller for LinkTree
 class TreesController < ApplicationController
   before_action :set_tree, only: %i[show edit update destroy]
-  before_action :authenticate_user!, only: %i[new edit update destroy]
+  before_action :authenticate_user!, only: %i[index new edit update destroy]
 
   # GET /trees or /trees.json
   def index
-    @trees = Tree.all
+    @trees = current_user.trees
   end
 
   # GET /trees/1 or /trees/1.json
@@ -63,7 +63,7 @@ class TreesController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_tree
-    @tree = Tree.find(params[:id])
+    @tree = Tree.friendly.find(params[:id])
   end
 
   # Only allow a list of trusted parameters through.

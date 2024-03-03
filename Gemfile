@@ -5,6 +5,7 @@ ruby '3.3.0'
 gem 'bootsnap', require: false
 gem 'bootstrap', '~> 5.2'
 gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'friendly_id', '~> 5.1'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'jquery-rails', '~> 4.6'
