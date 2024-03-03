@@ -36,6 +36,9 @@ gem 'rubocop', '~> 1.60'
 
 gem 'sassc-rails'
 gem 'solargraph', '~> 0.50.0'
+
+gem 'mysql2', '~> 0.5.2'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
