@@ -5,11 +5,15 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample05">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse " id="navbarsExample05">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-md-center">
           <li class="nav-item">
             <%= link_to "Home", root_path, class: "nav-link active" %>
           </li>
+          <li class="nav-item">
+             <%=  link_to "New Tree", new_tree_path, class: "nav-link" %>
+          </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Authentication</a>
             <ul class="dropdown-menu">
