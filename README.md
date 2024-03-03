@@ -1,3 +1,3 @@
 # README
 
-Simple Ruby on Rails pet project
+LinkTree clone project on Ruby on Rails.
