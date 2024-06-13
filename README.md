@@ -1,4 +1,4 @@
-# Tasks List App
+# LinkTree
 LinkTree clone project on Ruby on Rails.
 
 
